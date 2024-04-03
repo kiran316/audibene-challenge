@@ -22,8 +22,8 @@ services:
       dockerfile: Dockerfile  # Adjust the path to your Dockerfile if necessary
     environment:
       - AWS_DEFAULT_REGION=us-east-1
-      - AWS_ACCESS_KEY_ID=AKIAZI2LIF4CJV4JE34G
-      - AWS_SECRET_ACCESS_KEY=xOwiKs7sizwVTUjRFZhauBqajdoAWnOSSR+3yhpj
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_ENDPOINT_URL=http://localstack:4566  # Assuming localstack service name is 'localstack'
     depends_on:
       - localstack
